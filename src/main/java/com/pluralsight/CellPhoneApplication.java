@@ -29,62 +29,9 @@ public class CellPhoneApplication {
         System.out.println("Model: " + phone.getModel());
         System.out.println("Carrier:: " + phone.getCarrier());
         System.out.println("Phone Number: " + phone.getPhoneNumber());
+        phone.dial(scanner);
 
     }
 
-    static class CellPhone {
-        int serialNumber;
-        String model;
-        String carrier;
-        String phoneNumber;
-        String owner;
 
-        public CellPhone() {
-            serialNumber = 0;
-            model = "";
-            carrier = "";
-            phoneNumber = "";
-            owner = "";
-        }
-
-        public int getSerialNumber() {
-            return serialNumber;
-        }
-
-        public void setSerialNumber(int serialNumber) {
-            this.serialNumber = serialNumber;
-        }
-
-        public String getModel() {
-            return model;
-        }
-
-        public void setModel(String model) {
-            this.model = model;
-        }
-
-        public String getCarrier() {
-            return carrier;
-        }
-
-        public void setCarrier(String carrier) {
-            this.carrier = carrier;
-        }
-
-        public String getPhoneNumber() {
-            return phoneNumber;
-        }
-
-        public void setPhoneNumber(String phoneNumber) {
-            this.phoneNumber = phoneNumber;
-        }
-
-        public String getOwner() {
-            return owner;
-        }
-
-        public void setOwner(String owner) {
-            this.owner = owner;
-        }
-    }
 }
